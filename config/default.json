@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://root:root@cluster0-kpgr7.mongodb.net/miniurl?retryWrites=true&w=majority",
+    "mongoURI": "",
     "baseUrl": "http://localhost:5001"
 }
