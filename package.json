@@ -1,0 +1,32 @@
+{
+  "name": "mini-url",
+  "version": "1.0.0",
+  "description": "Convert long url to short url",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsha-iiiv/mini-url.git"
+  },
+  "keywords": [
+    "url",
+    "shorturl"
+  ],
+  "author": "Harsha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harsha-iiiv/mini-url/issues"
+  },
+  "homepage": "https://github.com/harsha-iiiv/mini-url#readme",
+  "dependencies": {
+    "config": "^3.2.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.3",
+    "shortid": "^2.2.15",
+    "valid-url": "^1.0.9"
+  }
+}
