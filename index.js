@@ -9,6 +9,7 @@ const app = express();
 
 
 connectDB();
+// app.set("view engine", "pug");
 
 app.use(express.json());
 
