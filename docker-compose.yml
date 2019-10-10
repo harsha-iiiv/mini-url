@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    container_name: mini-url
+    restart: always
+    build: .
+    ports:
+      - '5001:5001'
+   

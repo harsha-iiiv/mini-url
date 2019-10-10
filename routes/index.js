@@ -21,9 +21,8 @@ router.get("/:code", async (req, res) => {
   }
 });
 router.get("/", async (req, res) => {
-  res.send(
-    '<img style="width: 100%; height: auto;" src="https://theguidex.com/wp-content/uploads/2017/03/maxresdefault.jpg" />'
-  );
+         res.render("index", { url: "Cropped url will be diplayed here" });
+
 });
 
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index",
-    "start": "node index"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/harsha-iiiv/mini-url#readme",
   "dependencies": {
     "config": "^3.2.3",
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
     "mongoose": "^5.7.3",
     "pug": "^2.0.4",

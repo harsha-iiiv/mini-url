@@ -25,7 +25,7 @@ router.get("/", async (req, res) => {
       let url = await Url.findOne({ longUrl });
 
       if (url) {
-        res.json({"longUrl": url.longUrl, "shortUrl" : url.shortUrl});
+        res.render("index", { url: url.shortUrl });
       } else {
         const shortUrl = baseUrl + "/" + urlCode;
 
@@ -37,15 +37,16 @@ router.get("/", async (req, res) => {
         });
 
         await url.save();
-
-        res.json(url);
+  
+        
+        res.render("index", { url: url.shortUrl });
       }
     } catch (err) {
       console.error(err);
-      res.status(500).json("Server error");
+        res.render("index", { url: "error occured" });
     }
   } else {
-    res.status(401).json("Invalid long url");
+        res.render("index", { url: "error" });
   }
 });
 
