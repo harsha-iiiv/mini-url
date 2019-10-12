@@ -18,9 +18,13 @@ app.use(express.json());
 app.use('/', index );
 app.use('/api/url', URL)
 
+// if(process.env.NODE_ENV !==	production) {	
+//    app.use(express.static(__dirname + "/public"));
+
+// }
 
 
-const PORT = 5001 || process.env.PORT
+const PORT = process.env.PORT
 
 app.listen(PORT, ()=>
 console.log(`server running on ${PORT}`)
