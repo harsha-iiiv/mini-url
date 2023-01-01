@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/harsha-iiiv/mini-url#readme",
   "dependencies": {
-    "config": "^3.2.3",
+    "config": "^3.3.8",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "mongoose": "^5.7.3",
